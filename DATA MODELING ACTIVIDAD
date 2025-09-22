@@ -1,0 +1,34 @@
+# Modelos de análisis de datos: Supervisados y No supervisados
+
+modelos = {
+    "Árboles de decisión (Clasificación)": {
+        "Cómo funciona": "Construye un modelo en forma de árbol dividiendo los datos en nodos de decisión hasta llegar a hojas con predicciones.",
+        "Cuándo se utiliza": "Problemas de clasificación o regresión; útil por su interpretabilidad."
+    },
+    "Regresión logística (Clasificación)": {
+        "Cómo funciona": "Combina variables de forma lineal y aplica la función sigmoide para obtener probabilidades.",
+        "Cuándo se utiliza": "Clasificación binaria o multiclase (ej. spam/no spam, diagnóstico sí/no)."
+    },
+    "Regresión lineal (Regresión)": {
+        "Cómo funciona": "Ajusta una relación lineal entre variables independientes y una variable dependiente minimizando el error cuadrático.",
+        "Cuándo se utiliza": "Predicción de variables continuas (ej. precios de viviendas, ventas, rendimiento)."
+    },
+    "ARIMA (Series de tiempo)": {
+        "Cómo funciona": "Combina autorregresión (AR), diferenciación (I) y promedio móvil (MA) para modelar patrones en series temporales.",
+        "Cuándo se utiliza": "Pronósticos de series de tiempo (ej. demanda, finanzas, clima)."
+    },
+    "K-means (Clustering)": {
+        "Cómo funciona": "Agrupa datos en K clusters asignando puntos al centroide más cercano y actualizando iterativamente los centroides.",
+        "Cuándo se utiliza": "Segmentación de clientes, agrupación de datos sin etiquetas."
+    },
+    "Apriori (Reglas de asociación)": {
+        "Cómo funciona": "Encuentra conjuntos de ítems frecuentes en transacciones y genera reglas de asociación a partir de ellos.",
+        "Cuándo se utiliza": "Análisis de canastas de mercado, detección de patrones de compra."
+    }
+}
+
+
+for modelo, info in modelos.items():
+    print(f"📌 {modelo}")
+    print(f"   - Cómo funciona: {info['Cómo funciona']}")
+    print(f"   - Cuándo se utiliza: {info['Cuándo se utiliza']}\n")
