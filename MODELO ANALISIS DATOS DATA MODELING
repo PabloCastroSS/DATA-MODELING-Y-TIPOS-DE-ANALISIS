@@ -1,0 +1,22 @@
+
+python
+Copiar código
+modelos = {
+    "Árboles de decisión": {
+        "Cómo funciona": "Divide datos en nodos hasta obtener predicciones.",
+        "Cuándo se utiliza": "Clasificación, interpretabilidad alta."
+    },
+    "Regresión logística": {
+        "Cómo funciona": "Usa función sigmoide para probabilidades.",
+        "Cuándo se utiliza": "Clasificación binaria."
+    },
+    "Regresión lineal": {
+        "Cómo funciona": "Ajusta una recta/hiperplano minimizando error cuadrático.",
+        "Cuándo se utiliza": "Predicción de valores continuos."
+    }
+}
+
+for modelo, info in modelos.items():
+    print(f"## {modelo}")
+    print(f"- Cómo funciona: {info['Cómo funciona']}")
+    print(f"- Cuándo se utiliza: {info['Cuándo se utiliza']}\n")
